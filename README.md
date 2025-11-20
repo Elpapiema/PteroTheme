@@ -2,5 +2,5 @@
 
 Install script:
 ```sh
-bash <(curl https://raw.githubusercontent.com/Angelillo15/IceMinecraftTheme/main/install.sh)
+bash <(curl https://raw.githubusercontent.com/Elpapiema/PteroTheme/refs/heads/main/install.sh)
 ```

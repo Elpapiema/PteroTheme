@@ -12,12 +12,12 @@ clear
 
 installTheme(){
     cd /var/www/
-    tar -cvf IceMinecraftTheme.tar.gz pterodactyl
+    tar -cvf PteroTheme.tar.gz pterodactyl
     echo "Installing theme..."
     cd /var/www/pterodactyl
-    rm -r IceMinecraftTheme
-    git clone https://github.com/Angelillo15/IceMinecraftTheme.git
-    cd IceMinecraftTheme
+    rm -r PteroTheme
+    git clone https://github.com/Elpapiema/PteroTheme.git
+    cd PteroTheme
     rm /var/www/pterodactyl/resources/scripts/IceMinecraftTheme.css
     rm /var/www/pterodactyl/resources/scripts/index.tsx
     rm /var/www/pterodactyl/resources/scripts/components/server/console/Console.tsx
@@ -88,11 +88,11 @@ printf "${blue}  \(     \( |____|/   \( |_____|/            \(              \(  
 printf "${blue}   '      '   )/       '    )/                '               '     '      '    )/         '          '         '    )/     \n"
 printf "${blue}              '             '                                                   '                                    '      \n"
 echo ""
-echo "Copyright (c) 2022 Angelillo15 | angelillo15.es"
+echo "Copyright (c) 2025 Emma (Violets Version) | perfil.alyabot.xyz"
 echo "This program is free software: you can redistribute it and/or modify"
 echo ""
-echo "Discord: https://discord.angelillo15.es/"
-echo "Website: https://angelillo15.es/"
+echo "Discord: Proximamente"
+echo "Website: https://perfil.alyabot.xyz/"
 echo ""
 echo "[1] Install theme"
 echo "[2] Restore backup"

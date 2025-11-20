@@ -52,7 +52,7 @@ const terminalProps: ITerminalOptions = {
 };
 
 export default () => {
-  const TERMINAL_PRELUDE = '\u001b[1m\u001b[33mcontainer@pterodactyl~ \u001b[0m';
+  const TERMINAL_PRELUDE = '\u001b[1m\u001b[33mserver@Alya-Host~ \u001b[0m';
   const ref = useRef<HTMLDivElement>(null);
   const terminal = useMemo(() => new Terminal({ ...terminalProps }), []);
   const fitAddon = new FitAddon();
@@ -89,7 +89,7 @@ export default () => {
     terminal.writeln(TERMINAL_PRELUDE + '\u001b[1m\u001b[41m' + line.replace(/(?:\r\n|\r|\n)$/im, '') + '\u001b[0m');
 
   const handlePowerChangeEvent = (state: string) =>
-    terminal.writeln(TERMINAL_PRELUDE + 'Server marked as ' + state + '...\u001b[0m');
+    terminal.writeln(TERMINAL_PRELUDE + 'Servidor Marcado como ' + state + '...\u001b[0m');
 
   const handleCommandKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'ArrowUp') {
@@ -202,7 +202,7 @@ export default () => {
           <input
             className={classNames('peer', styles.command_input)}
             type={'text'}
-            placeholder={'Type a command...'}
+            placeholder={'Envia un comando al servidor...'}
             aria-label={'Console command input.'}
             disabled={!instance || !connected}
             onKeyDown={handleCommandKeyDown}
